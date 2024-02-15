@@ -1,5 +1,5 @@
-body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+body  {
+    font-family: 'Lucida Bright', 'Lucida Fax', 'Lucida Sans', 'Lucida Sans Unicode', Georgia, serif;
     color: #333;
     line-height: 1.6;
     margin: 0;
@@ -45,9 +45,9 @@ footer {
 }
 
 h1, h2 {
+    font-family: 'Lucida Bright', 'Lucida Fax', 'Lucida Sans', 'Lucida Sans Unicode', 'Georgia', serif;
     color: #333;
 }
-
 a {
     color: #007bff;
 }
