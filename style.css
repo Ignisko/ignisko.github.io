@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     background: #fff;
-    color: #000;
+    color: #000; 
     font-family: 'Lucida Bright', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', sans-serif;
     line-height: 1.6;
 }
@@ -11,6 +11,7 @@ body, html {
     max-width: 800px;
     margin: auto;
     padding: 20px;
+    padding-left: 40px;
     text-align: center;
 }
 
@@ -21,6 +22,7 @@ header h1 {
 
 main {
     padding: 20px;
+    padding-left: 40px;
     margin-bottom: 40px;
 }
 
@@ -30,20 +32,21 @@ section {
 
 section h2 {
     font-size: 2em;
-    color: white;
+    color: black; 
 }
 
 section p {
     font-size: 1em;
-    color: white;
+    color: black; 
 }
 
 footer {
     padding: 20px;
+    padding-left: 40px;
     text-align: center;
 }
 
 footer p {
     font-size: 1em;
-    color: white;
+    color: white; /* Keeps footer text white */
 }
