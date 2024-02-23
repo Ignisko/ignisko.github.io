@@ -49,7 +49,7 @@ section p {
 footer {
     padding: 20px; /* Spacing inside the footer */
     text-align: center; /* Centers footer content */
-    background: whoite; /* Explicitly sets the background to white */
+    background: white; /* Explicitly sets the background to white */
 }
 
 footer p {
