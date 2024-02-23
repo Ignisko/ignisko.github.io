@@ -1,58 +1,58 @@
 body, html {
     margin: 0;
     padding: 0;
-    background: #fff;
-    color: #000;
-    font-family: 'Merriweather', serif;
-    line-height: 1.6;
+    background: #fff; /* Ensures the background is white */
+    color: #000; /* Sets text color to black for contrast */
+    font-family: 'Merriweather', serif; /* Aesthetic font choice */
+    line-height: 1.6; /* Improves readability */
 }
 
 .container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    text-align: center;
+    max-width: 800px; /* Optimal reading width */
+    margin: auto; /* Centers container */
+    padding: 20px; /* Spacing inside the container */
+    text-align: center; /* Aligns child elements to the center */
 }
 
 header {
-    padding-left: 5%; 
+    padding-left: 5%; /* Left padding for alignment */
 }
 
 header h1 {
-    font-size: 3em;
-    margin-bottom: 0.5em;
-    text-align: left;
-    padding-left: 10%; /
+    font-size: 3em; /* Large, eye-catching title */
+    margin-bottom: 0.5em; /* Spacing below the title */
+    text-align: left; /* Aligns title to the left */
+    padding-left: 10%; /* Additional left padding for aesthetic alignment */
 }
 
 main {
-    padding: 20px;
-    margin-bottom: 40px;
+    padding: 20px; /* Spacing inside main content */
+    margin-bottom: 40px; /* Separates main content from elements below */
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* Spacing between sections */
 }
 
 section h2 {
-    font-size: 2em;
-    color: black;
-    text-align: left;
+    font-size: 2em; /* Headings within sections are prominently sized */
+    color: black; /* Ensures heading color is black for readability */
+    text-align: left; /* Aligns headings to the left */
 }
 
 section p {
-    font-size: 1em;
-    color: black;
-    text-align: left;
+    font-size: 1em; /* Standard text size */
+    color: black; /* Ensures paragraph text is black for readability */
+    text-align: left; /* Aligns text to the left */
 }
 
 footer {
-    padding: 20px;
-    text-align: center;
-    background: #fff;
+    padding: 20px; /* Spacing inside the footer */
+    text-align: center; /* Centers footer content */
+    background: #fff; /* Explicitly sets the background to white */
 }
 
 footer p {
-    font-size: 1em;
-    color: black; 
+    font-size: 1em; /* Standard text size for footer */
+    color: black; /* Ensures text is black for readability */
 }
