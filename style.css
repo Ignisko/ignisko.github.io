@@ -1,9 +1,9 @@
 body, html {
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 5%;
     background: #fff;
-    color: #000; 
-    font-family: 'Merriweather', serif; 
+    color: #000;
+    font-family: 'Merriweather', serif;
     line-height: 1.6;
 }
 
@@ -11,23 +11,21 @@ body, html {
     max-width: 800px;
     margin: auto;
     padding: 20px;
-    padding-left: 60px; 
     text-align: center;
 }
 
 header {
-    padding-left: 60px;
+    padding-left: 5%;
 }
 
 header h1 {
     font-size: 3em;
     margin-bottom: 0.5em;
-    text-align: left; 
+    text-align: left;
 }
 
 main {
     padding: 20px;
-    padding-left: 60px; 
     margin-bottom: 40px;
 }
 
@@ -37,21 +35,22 @@ section {
 
 section h2 {
     font-size: 2em;
-    color: black; 
-    text-align: left; 
+    color: black;
+    text-align: left;
+}
 
 section p {
     font-size: 1em;
     color: black;
-    text-align: left; 
+    text-align: left;
+}
 
 footer {
     padding: 20px;
-    padding-left: 60px; 
     text-align: center;
 }
 
 footer p {
     font-size: 1em;
-    color: black; 
+    color: black;
 }
