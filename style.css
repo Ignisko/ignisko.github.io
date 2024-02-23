@@ -1,6 +1,6 @@
 body, html {
     margin: 0;
-    padding: 0 0 0 5%;
+    padding: 0;
     background: #fff;
     color: #000;
     font-family: 'Merriweather', serif;
@@ -22,6 +22,7 @@ header h1 {
     font-size: 3em;
     margin-bottom: 0.5em;
     text-align: left;
+    padding-left: 5%;
 }
 
 main {
@@ -48,6 +49,7 @@ section p {
 footer {
     padding: 20px;
     text-align: center;
+    background: #333;
 }
 
 footer p {
