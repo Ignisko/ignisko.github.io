@@ -1,58 +1,102 @@
 body, html {
     margin: 0;
     padding: 0;
-    background: #fff; /* Ensures the background is white */
-    color: #000; /* Sets text color to black for contrast */
-    font-family: 'Merriweather', serif; /* Aesthetic font choice */
-    line-height: 1.6; /* Improves readability */
+    scroll-behavior: smooth; /* Ensures smooth scrolling */
+    font-family: sans-serif; /* Global font change to sans-serif */
+    scroll-snap-type: y mandatory; /* Enables vertical snapping */
+    overflow-y: scroll; /* Ensures the body is scrollable */
 }
 
-.container {
-    max-width: 800px; /* Optimal reading width */
-    margin: auto; /* Centers container */
-    padding: 20px; /* Spacing inside the container */
-    text-align: center; /* Aligns child elements to the center */
+.content {
+    min-height: 100vh; /* Makes each section take up the full screen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center; /* Ensures text is centered */
+    position: relative; /* Ensures content is properly layered over the image */
+    z-index: 1; /* Ensures content is above the background image */
+    scroll-snap-align: start; /* Aligns the snap point at the start of the section */
 }
 
-header {
-    padding-left: 5%; /* Left padding for alignment */
+#fixed-tree {
+    position: fixed;
+    top: 0;
+    left: 0; /* Positions the image on the left side */
+    height: 100vh; /* Stretches the image to the full viewport height */
+    width: auto; /* Adjusts the width automatically to maintain aspect ratio */
+    z-index: -1; /* Keeps the image behind the content */
 }
 
-header h1 {
-    font-size: 3em; /* Large, eye-catching title */
-    margin-bottom: 0.5em; /* Spacing below the title */
-    text-align: left; /* Aligns title to the left */
-    padding-left: 10%; /* Additional left padding for aesthetic alignment */
+/* Additional styling for readability and aesthetics */
+h1, h2, p {
+    margin: 0.5em 0; /* Adjusted margins for headings and paragraphs */
 }
 
-main {
-    padding: 20px; /* Spacing inside main content */
-    margin-bottom: 40px; /* Separates main content from elements below */
+/* Colors based on the image provided */
+:root {
+    --deep-blue: #003f88;
+    --bright-blue: #0077be;
+    --soft-blue: #7ba7e1;
+    --light-orange: #ff9e6d;
+    --vibrant-orange: #ff5e00;
 }
 
-section {
-    margin-bottom: 40px; /* Spacing between sections */
+/* Example background colors for visual separation of sections */
+#hello { background-color: var(--deep-blue); }
+#about { background-color: var(--soft-blue); }
+#projects { background-color: var(--bright-blue); }
+#contact { background-color: var(--light-orange); }
+#footer {
+    background-color: var(--vibrant-orange); /* Using the vibrant orange color */
+    padding: 1em 0; /* Add padding for visual space in the footer */
+    text-align: center; /* Center the footer content */
 }
 
-section h2 {
-    font-size: 2em; /* Headings within sections are prominently sized */
-    color: black; /* Ensures heading color is black for readability */
-    text-align: left; /* Aligns headings to the left */
+/* Text colors for contrast */
+h1, h2 {
+    color: white; /* Ensures readability on the darker backgrounds */
 }
 
-section p {
-    font-size: 1em; /* Standard text size */
-    color: black; /* Ensures paragraph text is black for readability */
-    text-align: left; /* Aligns text to the left */
+p {
+    color: #333; /* Darker text for readability on the lighter background */
 }
 
-footer {
-    padding: 20px; /* Spacing inside the footer */
-    text-align: center; /* Centers footer content */
-    background: white; /* Explicitly sets the background to white */
+/* Interactive elements */
+a, button {
+    background-color: var(--vibrant-orange);
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 2px;
+    transition: background-color 0.3s;
 }
 
-footer p {
-    font-size: 1em; /* Standard text size for footer */
-    color: black; /* Ensures text is black for readability */
+a:hover, button:hover {
+    background-color: var(--light-orange);
+}
+
+/* Navigation bullets */
+.nav-bullets {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.nav-bullet {
+    background-color: white; /* Initial bullet color */
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.nav-bullet.active {
+    background-color: brown; /* Active bullet color */
 }
